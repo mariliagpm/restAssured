@@ -1,0 +1,310 @@
+[
+  {
+    "source": "^faco a requisicao para consultar um usuario com telefone errado$",
+    "steps": [
+      {
+        "name": "faco a requisicao para consultar um usuario com telefone errado",
+        "aggregatedDurations": {
+          "average": 0.1041332,
+          "median": 0.1041332
+        },
+        "durations": [
+          {
+            "duration": 0.1041332,
+            "location": "test.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^faco a requisicao para filtrar um usuario$",
+    "steps": [
+      {
+        "name": "faco a requisicao para filtrar um usuario",
+        "aggregatedDurations": {
+          "average": 0.0699555,
+          "median": 0.0699555
+        },
+        "durations": [
+          {
+            "duration": 0.1265771,
+            "location": "test.feature:57"
+          },
+          {
+            "duration": 0.0133339,
+            "location": "test.feature:67"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^faco a requisicao para criar o usuario$",
+    "steps": [
+      {
+        "name": "faco a requisicao para criar o usuario",
+        "aggregatedDurations": {
+          "average": 0.562021966,
+          "median": 0.0448537
+        },
+        "durations": [
+          {
+            "duration": 1.6204985,
+            "location": "test.feature:6"
+          },
+          {
+            "duration": 0.0448537,
+            "location": "test.feature:15"
+          },
+          {
+            "duration": 0.0207137,
+            "location": "test.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta de criacao de usuario com cpf ja registrado$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta de criacao de usuario com cpf ja registrado",
+        "aggregatedDurations": {
+          "average": 0.7063909,
+          "median": 0.7063909
+        },
+        "durations": [
+          {
+            "duration": 0.7063909,
+            "location": "test.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta de criacao de usuario um telefone ja registrado$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta de criacao de usuario um telefone ja registrado",
+        "aggregatedDurations": {
+          "average": 0.0131868,
+          "median": 0.0131868
+        },
+        "durations": [
+          {
+            "duration": 0.0131868,
+            "location": "test.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta da consulta de um usuario com telefone errado$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta da consulta de um usuario com telefone errado",
+        "aggregatedDurations": {
+          "average": 0.0355293,
+          "median": 0.0355293
+        },
+        "durations": [
+          {
+            "duration": 0.0355293,
+            "location": "test.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta da consulta com filtro de um usuario$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta da consulta com filtro de um usuario",
+        "aggregatedDurations": {
+          "average": 0.163356,
+          "median": 0.163356
+        },
+        "durations": [
+          {
+            "duration": 0.163356,
+            "location": "test.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta da consulta com filtro errado$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta da consulta com filtro errado",
+        "aggregatedDurations": {
+          "average": 0.0133696,
+          "median": 0.0133696
+        },
+        "durations": [
+          {
+            "duration": 0.0133696,
+            "location": "test.feature:69"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^que eu fiz a leitura do meu arquivo json com o nome \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+        "aggregatedDurations": {
+          "average": 0.14890284,
+          "median": 0.0022678
+        },
+        "durations": [
+          {
+            "duration": 0.7337252,
+            "location": "test.feature:5"
+          },
+          {
+            "duration": 0.0020007,
+            "location": "test.feature:14"
+          },
+          {
+            "duration": 0.0010926,
+            "location": "test.feature:35"
+          },
+          {
+            "duration": 0.0022678,
+            "location": "test.feature:45"
+          },
+          {
+            "duration": 0.0054279,
+            "location": "test.feature:56"
+          }
+        ]
+      },
+      {
+        "name": "que eu fiz a leitura do meu arquivo json com o nome \"procurarPessoa.json\"",
+        "aggregatedDurations": {
+          "average": 0.0027472,
+          "median": 0.0027472
+        },
+        "durations": [
+          {
+            "duration": 0.0027472,
+            "location": "test.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoaError.json\"",
+        "aggregatedDurations": {
+          "average": 0.0012234,
+          "median": 0.0012234
+        },
+        "durations": [
+          {
+            "duration": 0.0012234,
+            "location": "test.feature:66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifico o body da reposta da consulta de um usuario$",
+    "steps": [
+      {
+        "name": "verifico o body da reposta da consulta de um usuario",
+        "aggregatedDurations": {
+          "average": 0.069359,
+          "median": 0.069359
+        },
+        "durations": [
+          {
+            "duration": 0.069359,
+            "location": "test.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^faco a requisicao para consultar um usuario$",
+    "steps": [
+      {
+        "name": "faco a requisicao para consultar um usuario",
+        "aggregatedDurations": {
+          "average": 0.0422281,
+          "median": 0.0422281
+        },
+        "durations": [
+          {
+            "duration": 0.0422281,
+            "location": "test.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^o codigo de retorno deve ser (\\d+)$",
+    "steps": [
+      {
+        "name": "o codigo de retorno deve ser 400",
+        "aggregatedDurations": {
+          "average": 0.00108835,
+          "median": 0.00108835
+        },
+        "durations": [
+          {
+            "duration": 0.0011573,
+            "location": "test.feature:16"
+          },
+          {
+            "duration": 0.0010194,
+            "location": "test.feature:26"
+          }
+        ]
+      },
+      {
+        "name": "o codigo de retorno deve ser 200",
+        "aggregatedDurations": {
+          "average": 0.001245466,
+          "median": 0.0012826
+        },
+        "durations": [
+          {
+            "duration": 0.0007332,
+            "location": "test.feature:37"
+          },
+          {
+            "duration": 0.0017206,
+            "location": "test.feature:58"
+          },
+          {
+            "duration": 0.0012826,
+            "location": "test.feature:68"
+          }
+        ]
+      },
+      {
+        "name": "o codigo de retorno deve ser 404",
+        "aggregatedDurations": {
+          "average": 0.0019921,
+          "median": 0.0019921
+        },
+        "durations": [
+          {
+            "duration": 0.0019921,
+            "location": "test.feature:47"
+          }
+        ]
+      }
+    ]
+  }
+]

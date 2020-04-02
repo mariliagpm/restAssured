@@ -1,0 +1,550 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Testar a criacao de um usuario",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-criacao-de-um-usuario;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 733725200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1620498500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "faco a requisicao para criar o usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_criar_o_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 53053300,
+              "error_message": "java.lang.AssertionError: Expected status code \u003c201\u003e doesn\u0027t match actual status code \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:232)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:244)\r\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:572)\r\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)\r\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:731)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)\r\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:106)\r\n\tat com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)\r\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:114)\r\n\tat com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:114)\r\n\tat br.exemplo.restAssured.Testes.StepDefinitions.o_codigo_de_retorno_deve_ser(StepDefinitions.java:50)\r\n\tat ✽.Entao o codigo de retorno deve ser 201(test.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "o codigo de retorno deve ser 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verifico o body da reposta de criacao de usuario",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_de_criacao()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Testar a criacao de um usuario com um cpf j� registrado",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-criacao-de-um-usuario-com-um-cpf-j�-registrado;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 44853700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "faco a requisicao para criar o usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_criar_o_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1157300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "o codigo de retorno deve ser 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 706390900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verifico o body da reposta de criacao de usuario com cpf ja registrado",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_de_criacao_de_usuario_com_cpf_ja_registrado()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Testar a criacao de um usuario com um telefone j� registrado",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-criacao-de-um-usuario-com-um-telefone-j�-registrado;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2747200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"procurarPessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "procurarPessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 20713700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "faco a requisicao para criar o usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_criar_o_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1019400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "o codigo de retorno deve ser 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 13186800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "verifico o body da reposta de criacao de usuario um telefone ja registrado",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_de_criacao_de_usuario_um_telefone_ja_registrado()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Testar a busca de um usuario pelo ddd + numero de telefone",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-busca-de-um-usuario-pelo-ddd-+-numero-de-telefone;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1092600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 42228100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "faco a requisicao para consultar um usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_consultar_um_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 733200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "o codigo de retorno deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 69359000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "verifico o body da reposta da consulta de um usuario",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_da_consulta_de_um_usu_rio()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Testar a busca de um usuario pelo ddd + numero de telefone errado",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-busca-de-um-usuario-pelo-ddd-+-numero-de-telefone-errado;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2267800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 104133200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "faco a requisicao para consultar um usuario com telefone errado",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_consultar_um_usuario_com_telefone_errado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1992100,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "o codigo de retorno deve ser 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 35529300,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "verifico o body da reposta da consulta de um usuario com telefone errado",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_da_consulta_de_um_usuario_com_telefone_errado()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "Testar a filtragem de um usu�rio",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-filtragem-de-um-usu�rio;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5427900,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoa.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoa.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 126577100,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "faco a requisicao para filtrar um usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_filtrar_um_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1720600,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "o codigo de retorno deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 163356000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "verifico o body da reposta da consulta com filtro de um usuario",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_da_consulta_com_filtro_de_um_usuario()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 72,
+        "name": "Testar a filtragem de um usu�rio",
+        "description": "",
+        "id": "incluindo-um-usuario;testar-a-filtragem-de-um-usu�rio;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1223400,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "que eu fiz a leitura do meu arquivo json com o nome \"pessoaError.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pessoaError.json",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 13333900,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "faco a requisicao para filtrar um usuario",
+            "match": {
+              "location": "StepDefinitions.faco_a_requisicao_para_filtrar_um_usuario()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1282600,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "o codigo de retorno deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.o_codigo_de_retorno_deve_ser(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 13369600,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "verifico o body da reposta da consulta com filtro errado",
+            "match": {
+              "location": "StepDefinitions.verifico_o_body_da_reposta_da_consulta_com_filtro_errado()"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Incluindo um usuario",
+    "description": "",
+    "id": "incluindo-um-usuario",
+    "keyword": "Funcionalidade",
+    "uri": "test.feature"
+  }
+]

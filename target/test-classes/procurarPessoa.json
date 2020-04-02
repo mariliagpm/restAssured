@@ -1,0 +1,19 @@
+{
+"nome": "Ana Matos",
+"cpf": "37442789803",
+"enderecos": [
+{
+"logradouro": "Rua Alexandre Dumas",
+"numero": 123,
+"complemento": "Empresa",
+"bairro": "Chacara Santo Antonio",
+"cidade": "São Paulo",
+"estado": "SP"
+}
+],
+"telefones": [
+{
+"ddd": "11",
+"numero": "985388889"
+}]
+}

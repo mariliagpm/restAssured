@@ -1,0 +1,136 @@
+#language: pt
+Funcionalidade: Incluindo um usuario
+
+  Esquema do Cenario: Testar a criacao de um usuario                         # test.feature:4
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para criar o usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta de criacao de usuario
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a criacao de um usuario                       # test.feature:11
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoa.json" # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para criar o usuario                          # StepDefinitions.faco_a_requisicao_para_criar_o_usuario()
+    Entao o codigo de retorno deve ser 201                                 # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+      java.lang.AssertionError: Expected status code <201> doesn't match actual status code <400>.
+      
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+      	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:232)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:244)
+      	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:572)
+      	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)
+      	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:731)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+      	at java.lang.reflect.Method.invoke(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+      	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)
+      	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:106)
+      	at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)
+      	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:114)
+      	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:114)
+      	at br.exemplo.restAssured.Testes.StepDefinitions.o_codigo_de_retorno_deve_ser(StepDefinitions.java:50)
+      	at ✽.Entao o codigo de retorno deve ser 201(test.feature:7)
+
+    E verifico o body da reposta de criacao de usuario                     # StepDefinitions.verifico_o_body_da_reposta_de_criacao()
+
+  Esquema do Cenario: Testar a criacao de um usuario com um cpf j� registrado # test.feature:13
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para criar o usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta de criacao de usuario com cpf ja registrado
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a criacao de um usuario com um cpf j� registrado # test.feature:20
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoa.json"    # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para criar o usuario                             # StepDefinitions.faco_a_requisicao_para_criar_o_usuario()
+    Entao o codigo de retorno deve ser 400                                    # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta de criacao de usuario com cpf ja registrado  # StepDefinitions.verifico_o_body_da_reposta_de_criacao_de_usuario_com_cpf_ja_registrado()
+
+  Esquema do Cenario: Testar a criacao de um usuario com um telefone j� registrado # test.feature:23
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para criar o usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta de criacao de usuario um telefone ja registrado
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a criacao de um usuario com um telefone j� registrado # test.feature:30
+    Dado que eu fiz a leitura do meu arquivo json com o nome "procurarPessoa.json" # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para criar o usuario                                  # StepDefinitions.faco_a_requisicao_para_criar_o_usuario()
+    Entao o codigo de retorno deve ser 400                                         # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta de criacao de usuario um telefone ja registrado   # StepDefinitions.verifico_o_body_da_reposta_de_criacao_de_usuario_um_telefone_ja_registrado()
+
+  Esquema do Cenario: Testar a busca de um usuario pelo ddd + numero de telefone # test.feature:34
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para consultar um usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta da consulta de um usuario
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a busca de um usuario pelo ddd + numero de telefone # test.feature:41
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoa.json"       # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para consultar um usuario                           # StepDefinitions.faco_a_requisicao_para_consultar_um_usuario()
+    Entao o codigo de retorno deve ser 200                                       # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta da consulta de um usuario                       # StepDefinitions.verifico_o_body_da_reposta_da_consulta_de_um_usu_rio()
+
+  Esquema do Cenario: Testar a busca de um usuario pelo ddd + numero de telefone errado # test.feature:44
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para consultar um usuario com telefone errado
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta da consulta de um usuario com telefone errado
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a busca de um usuario pelo ddd + numero de telefone errado # test.feature:51
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoa.json"              # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para consultar um usuario com telefone errado              # StepDefinitions.faco_a_requisicao_para_consultar_um_usuario_com_telefone_errado()
+    Entao o codigo de retorno deve ser 404                                              # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta da consulta de um usuario com telefone errado          # StepDefinitions.verifico_o_body_da_reposta_da_consulta_de_um_usuario_com_telefone_errado()
+
+  Esquema do Cenario: Testar a filtragem de um usu�rio                       # test.feature:55
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para filtrar um usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta da consulta com filtro de um usuario
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a filtragem de um usu�rio                     # test.feature:62
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoa.json" # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para filtrar um usuario                       # StepDefinitions.faco_a_requisicao_para_filtrar_um_usuario()
+    Entao o codigo de retorno deve ser 200                                 # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta da consulta com filtro de um usuario      # StepDefinitions.verifico_o_body_da_reposta_da_consulta_com_filtro_de_um_usuario()
+
+  Esquema do Cenario: Testar a filtragem de um usu�rio                       # test.feature:65
+    Dado que eu fiz a leitura do meu arquivo json com o nome "<nomeArquivo>"
+    Quando faco a requisicao para filtrar um usuario
+    Entao o codigo de retorno deve ser <codigo>
+    E verifico o body da reposta da consulta com filtro errado
+
+    Exemplos: 
+
+  Esquema do Cenario: Testar a filtragem de um usu�rio                          # test.feature:72
+    Dado que eu fiz a leitura do meu arquivo json com o nome "pessoaError.json" # StepDefinitions.que_eu_fiz_a_leitura_do_meu_arquivo_json_com_o_nome(String)
+    Quando faco a requisicao para filtrar um usuario                            # StepDefinitions.faco_a_requisicao_para_filtrar_um_usuario()
+    Entao o codigo de retorno deve ser 200                                      # StepDefinitions.o_codigo_de_retorno_deve_ser(int)
+    E verifico o body da reposta da consulta com filtro errado                  # StepDefinitions.verifico_o_body_da_reposta_da_consulta_com_filtro_errado()
